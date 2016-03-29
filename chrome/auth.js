@@ -1,7 +1,7 @@
 // Upon loading, the Google APIs JS client automatically invokes this callback.
-googleApiClientReady = function() {
+window.gapi_onload = function() {
   gapi.auth.init(function() {
-    window.setTimeout(checkAuth, 1);
+    getAuth();
   });
 }
 

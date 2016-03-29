@@ -15,7 +15,7 @@
 	"content_security_policy": "script-src 'self' https://apis.google.com; object-src 'self'",
 
 	"background": {
-		"scripts": ["jquery.js", "gapi-client.js", "auth.js", "background.js"]
+		"scripts": ["jquery.js", "auth.js", "gapi.js", "background.js"]
 	},
 
 	"icons": {
