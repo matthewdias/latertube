@@ -1,0 +1,35 @@
+{
+	"manifest_version": 2,
+	
+	"name": "latertube",
+	"description": "Quick actions for YouTube embeds",
+	"version": "1.0",
+
+	"permissions": ["identity", "contextMenus"],
+
+	"key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAkXvi4CR0x+rcX01y+JfUp9pw6Eoz5B715xTxudBcQJI2wnMzdVDvojU1HZWyDXRn0OPjU/gIIX4IhPHp4plYxWYfI8eF/6KGPvkCYMwV6uq5VDG9FO9yQaltrkGOdThKfSY2G4zWPyvNdU4Y7bMTh2hMifBe80+dWx0Lz32ijzNR7JFLo2I4YKnkrL+gLkuMDqLenIlfetuiBcr0BkjdXqOPGI9Q3n+BG/LEeBrqmTZ3fRwQYMzfgR+TVruprgUXedHUoYesSoWqJOt+QUdiKTQN29Clax1I19P85VWvX1XiCCnG5PYYvxrugqmYgMgIpIPuCpPHxvvH5eC5vU0nzQIDAQAB",
+	"oauth2": {
+		"client_id": "315945223165-7ubhdgo9lvokpdqt37g1vf0d8ie07uto.apps.googleusercontent.com",
+		"scopes": ["https://www.googleapis.com/auth/youtube"]
+	},
+	"content_security_policy": "script-src 'self' https://apis.google.com; object-src 'self'",
+
+	"background": {
+		"scripts": ["jquery.js", "gapi-client.js", "auth.js", "background.js"]
+	},
+
+	"icons": {
+          "16": "icon16.png",
+          "48": "icon48.png",
+          "128": "icon128.png"
+    },
+
+	"commands": {
+		"watchlater": {
+			"suggested_key": {
+				"default": "Ctrl+Shift+L"
+			},
+			"description": "Add video to Watch Later"
+		}
+	}
+}
